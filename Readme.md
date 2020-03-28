@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Владимир Агаджанов](https://up.htmlacademy.ru/adaptive/19/user/1217965).
-* Наставник: `Неизвестно`.
+- Студент: [Владимир Агаджанов](https://up.htmlacademy.ru/adaptive/19/user/1217965).
+- Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
 
 ---
 
