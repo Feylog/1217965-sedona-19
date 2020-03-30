@@ -1,0 +1,64 @@
+doctype
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title HTML: Проект Sedona
+  body
+    header.page-header
+      a.page-header__logo
+        img.page-header__image(src="../source/img/logotyle-mobile.svg" alt="city_of_sedona" width="102" height="83")
+      .nav__wrapper
+        ul.nav
+          li.nav__item
+            a.nav__link.nav_link--active(href="") главная
+          li.nav__item
+            a.nav__link(href="") фото и видео
+          li.nav__item
+            a.nav__link(href="") форма отзыва
+          li.nav__item
+            a.nav__link(href="") html academy
+    main.page-content
+      h1.visually-hidden
+      .welcome.welcome__back
+      .welcome__foot
+      section.title__reasons
+        h2.title__slogan седона — небольшой городок в аризоне, заслуживающий большего!
+        p.title__text Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        .title__foot
+        .reason-1
+          h2.reason-1__title настоящий городок
+          p.reason-1__text — №1 — седона не аттракцион для туристов, там течет своя жизнь
+          .reason-1__image
+          ul.properties__list
+            li.properties__item.properties__item--house
+              .icon-house
+              h2.properties__title жилье
+              p.properties__text Рекомендуем пожить в настоящем мотеле, все как в кино!
+            li.properties__item.properties__item--gift
+              .icon-gift
+              h2.properties__title сувениры
+              p.properties__text не только китайского, но и местного производства!
+            li.properties__item.properties__item--burger
+              .icon-burger
+              h2.properties__title еда
+              p.properties__text всегда заказывайте фирменный бургер, вы не разочаруетесь!
+        .reason-2
+          h2.reason-2__title там есть мост дьявола
+          p.reason-2__text — №2 — Да, по нему можно пройти! Если вы осмелитесь, конечно
+          .reason-2__image
+        .reason-3
+          h2.reason-3__title не большая площадь
+          p.reason-3__text — №3 — все интересные места находятся очень близко
+        .reason-4
+          h2.reason-4__title красивая дорога
+          p.reason-4__text — №4 — ехать в седону из лас-вегаса совсем не скучно!
+        .reason-5
+          h2.reason-5__title мало туристов
+          p.reason-5__text — №5 — Большинство едет в гранд каньон и толпится там
+      .find__hotel
+        h2.find__title заинтересовались?
+        p.find__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        button.find__button найти гостиницу
+        iframe.find__map(src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7942402afd77c97127f6b87a4f2f23d35437ba63bd0ca024083946f659745f8&amp;source=constructor" width="320" height="350" frameborder="0")
+    footer.page-footer
+
