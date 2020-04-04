@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>HTML: Проект Sedona</title>
   </head>
   <body>
-    <header class="page-header"><a class="page-header__logo"><img class="page-header__image" src="../source/img/logotyle-mobile.svg" alt="city_of_sedona" width="102" height="83"></a>
-      <div class="nav__wrapper">
-        <ul class="nav">
-          <li class="nav__item"><a class="nav__link nav_link--active" href="">главная</a></li>
+    <header class="page-header"><a class="page-header__logo"><img class="page-header__image" src="" alt="city_of_sedona" width="102" height="83"></a>
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--active" href="">главная</a></li>
           <li class="nav__item"><a class="nav__link" href="">фото и видео</a></li>
           <li class="nav__item"><a class="nav__link" href="">форма отзыва</a></li>
           <li class="nav__item"><a class="nav__link" href="">html academy</a></li>
@@ -16,60 +16,67 @@
       </div>
     </header>
     <main class="page-content">
-      <h1 class="visually-hidden"></h1>
-      <div class="welcome welcome__back"></div>
-      <div class="welcome__foot"></div>
-      <section class="title__reasons">
-        <h2 class="title__slogan">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
-        <p class="title__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <div class="title__foot"></div>
-        <div class="reason-1">
-          <h2 class="reason-1__title">настоящий городок</h2>
-          <p class="reason-1__text">— №1 — седона не аттракцион для туристов, там течет своя жизнь</p>
-          <div class="reason-1__image"></div>
+      <h1 class="visually-hidden">городок Седона</h1>
+      <div class="welcome welcome__arrows"></div>
+      <section class="reasons reasons__arrows">
+        <h2 class="reason__slogan">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p class="reason__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="reason__foot"></div>
+        <div class="reason__info">
+          <h2 class="reason__info--title">настоящий городок</h2>
+          <p class="reason__info--text">— №1 — седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="reason__info--image"></div>
           <ul class="properties__list">
             <li class="properties__item properties__item--house">
-              <div class="icon-house"></div>
               <h2 class="properties__title">жилье</h2>
               <p class="properties__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="properties__item properties__item--gift">
-              <div class="icon-gift"></div>
               <h2 class="properties__title">сувениры</h2>
               <p class="properties__text">не только китайского, но и местного производства!</p>
             </li>
             <li class="properties__item properties__item--burger">
-              <div class="icon-burger"></div>
               <h2 class="properties__title">еда</h2>
               <p class="properties__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </div>
-        <div class="reason-2">
-          <h2 class="reason-2__title">там есть мост дьявола</h2>
-          <p class="reason-2__text">— №2 — Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <div class="reason-2__image"></div>
+        <div class="reason__info">
+          <h2 class="reason__info--title">там есть мост дьявола</h2>
+          <p class="reason__info--text">— №2 — Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="reason__info--image"></div>
         </div>
-        <div class="reason-3">
-          <h2 class="reason-3__title">не большая площадь</h2>
-          <p class="reason-3__text">— №3 — все интересные места находятся очень близко</p>
+        <div class="reason__info reason__info--short">
+          <h2 class="reason__info--title">не большая площадь</h2>
+          <p class="reason__info--text">— №3 — все интересные места находятся очень близко</p>
         </div>
-        <div class="reason-4">
-          <h2 class="reason-4__title">красивая дорога</h2>
-          <p class="reason-4__text">— №4 — ехать в седону из лас-вегаса совсем не скучно!</p>
+        <div class="reason__info reason__info--short">
+          <h2 class="reason__info--title">красивая дорога</h2>
+          <p class="reason__info--text">— №4 — ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
-        <div class="reason-5">
-          <h2 class="reason-5__title">мало туристов</h2>
-          <p class="reason-5__text">— №5 — Большинство едет в гранд каньон и толпится там</p>
+        <div class="reason__info reason__info--short">
+          <h2 class="reason__info--title">мало туристов</h2>
+          <p class="reason__info--text">— №5 — Большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
-      <div class="find__hotel">
+      <div class="find">
         <h2 class="find__title">заинтересовались?</h2>
         <p class="find__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="find__button">найти гостиницу</button>
         <iframe class="find__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7942402afd77c97127f6b87a4f2f23d35437ba63bd0ca024083946f659745f8&amp;amp;source=constructor" width="320" height="350" frameborder="0"></iframe>
       </div>
     </main>
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <h2 class="hash">#visitsedona</h2>
+      <ul class="social">
+        <li class="social__item"><a class="social__link--twitter" href=""></a></li>
+        <li class="social__item"><a class="social__link--facebook" href=""></a></li>
+        <li class="social__item"><a class="social__link--youtube" href=""></a></li>
+      </ul>
+      <div class="developed">
+        <h2 class="developed__text">Разработано</h2>
+        <div class="developed__logo"></div>
+      </div>
+    </footer>
   </body>
 </html>
