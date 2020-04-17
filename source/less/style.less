@@ -1,83 +1,14 @@
-@import "page-header.less";
-@import "nav.less";
-@import "reason.less";
-@import "properties.less";
-@import "find.less";
-@import "social.less";
-@import "developed.less";
-@import "foto-video.less";
-@import "foto.less";
-@import "video.less";
-@import "feedback.less";
-@import "form.less";
-
-@font-face {
-  font-family: "PTSans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "PTSansBold";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.page {
-  font-family: "PTSans";
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-  width: 320px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.welcome {
-  background: url("../img/bg-back-mobile@1x.jpg") center no-repeat;
-  height: 389px;
-  &::after {
-    content: "";
-    background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
-    height: 57px;
-    width: 1201px;
-  }
-  &::before {
-    content: "";
-    background: url("../img/text-sedona-index.svg") center no-repeat;
-    width: 282px;
-    height: 214px;
-  }
-}
-
-.sedona {
-  background: url("../img/bg-back-mobile@1x.jpg") center no-repeat;
-  height: 320px;
-}
-
-.hashtag {
-  font-family: "PTSansBOLD";
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
+@import "common/common.less";
+@import "common/fonts.less";
+@import "components/page-header.less";
+@import "components/nav.less";
+@import "components/reason.less";
+@import "components/properties.less";
+@import "components/social.less";
+@import "components/developed.less";
+@import "components/foto-video.less";
+@import "components/foto.less";
+@import "components/video.less";
+@import "components/feedback.less";
+@import "components/form.less";
+@import (less) "node_modules/normalize.css/normalize.css";
