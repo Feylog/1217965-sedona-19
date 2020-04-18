@@ -17,3 +17,65 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+.form__input-wrapper input {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 22px 0 20px 22px;
+
+  &::placeholder {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+
+.form__radio-list,
+.form__checkbox-list {
+  list-style: none;
+}
+
+.form__radio-item label,
+.form__checkbox-item label {
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__textarea {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 22px 0 0 21px;
+
+  &::placeholder {
+    color: #000000;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
+
+.form__button {
+  width: 280px;
+  color: #ffffff;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  cursor: pointer;
+  border: none;
+  padding: 21px 0;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
