@@ -7,13 +7,17 @@ ul {
 .reason {
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 
 .reason__slogan {
+  width: 255px;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
+  padding-top: 42px;
 }
 
 .reason__info-number {
@@ -23,17 +27,35 @@ ul {
 .reason__text {
   font-size: 14px;
   padding: 35px 32px 10px;
+
+  &::after {
+    content: "";
+    background: url("../img/bg-triangle.svg") no-repeat;
+    width: 766px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 185px;
+  }
 }
 
-.reason__info--large {
+.reason__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason__info-large {
   background-color: #81b3d2;
   color: #ffffff;
   padding: 44px 20px;
+  width: 320px;
 }
 
-.reason__info--short {
+.reason__info-short {
   background-color: #eeeeee;
   padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .reason__info-title {
@@ -56,4 +78,64 @@ ul {
 .reason__info-bridge {
   background: url("../img/main-bridge-mobile@1x.jpg") center no-repeat;
   height: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .reason__slogan,
+  .reason__text {
+    width: 490px;
+    margin: 0;
+  }
+
+  .reason__text {
+    padding: 35px 0 10px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .reason__info {
+    flex-direction: row;
+  }
+
+  .reason__info-city {
+    background: url("../img/main-city-tablet@1x.jpg") center no-repeat;
+    width: 512px;
+  }
+
+  .reason__info-bridge {
+    background: url("../img/main-bridge-tablet@1x.jpg") center no-repeat;
+    width: 512px;
+  }
+
+  .reason__info-large,
+  .reason__info-short {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason__info-city {
+    background: url("../img/main-city-desktop@1x.jpg") center no-repeat;
+    width: 800px;
+  }
+
+  .reason__info-bridge {
+    background: url("../img/main-bridge-desktop@1x.jpg") center no-repeat;
+    width: 800px;
+  }
+
+  .reason__info-large {
+    width: 400px;
+  }
+
+  .reason__info-short {
+    width: 400px;
+    padding: 50px 0 70px;
+  }
+
+  .reason__info-text {
+    width: 285px;
+  }
 }

@@ -2,10 +2,28 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .social__item {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding: 0 120px 0 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    padding: 0 276px 0 269px;
+  }
 }
