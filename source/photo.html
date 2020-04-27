@@ -3,127 +3,142 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML: Проект Sedona_Photo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page">
     <header class="page-header">
-      <div class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="../source/index.html">главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="">фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="../source/form.html">форма отзыва</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">html academy</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-header__logo">
-        <a class="page-header__link">
-          <img
-            class="page-header__image"
-            src="../source/img/logo-sedona-mobile.svg"
-            alt="City of Sedona"
-          />
-        </a>
+      <div class="container">
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="">фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">html academy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-header__logo">
+          <a class="page-header__link">
+            <img class="page-header__image" alt="City of Sedona" />
+          </a>
+        </div>
       </div>
     </header>
     <main class="page-content">
-      <h1 class="visually-hidden">Седона</h1>
-      <div class="sedona"></div>
-      <section class="foto-video">
-        <h2 class="foto-video__slogan">фото и видео</h2>
-        <p class="foto-video__text">
-          не можете решиться на путешествие из-за курса? фотографии помогут вам
-          забыть о политике и экономике.
-        </p>
-        <div class="foto">
-          <img class="foto__image" src="img/photo-sunset-mobile@1x.jpg" />
-          <h2 class="foto__text">неродные просторы</h2>
-          <p class="foto__author">Автор фото: Борис</p>
-          <div class="foto__like">1350</div>
-        </div>
-        <div class="foto">
-          <img class="foto__image" src="img/photo-cactus-mobile@1x.jpg" />
-          <h2 class="foto__text">местная растительность</h2>
-          <p class="foto__author">Автор фото: Сергей</p>
-          <div class="foto__like">143</div>
-        </div>
-        <div class="foto">
-          <img class="foto__image" src="img/photo-roads-mobile@1x.jpg" />
-          <h2 class="foto__text">дорога на север</h2>
-          <p class="foto__author">Автор фото: Петр</p>
-          <div class="foto__like">96</div>
-        </div>
-        <div class="foto">
-          <img class="foto__image" src="img/photo-bridge-mobile@1x.jpg" />
-          <h2 class="foto__text">мост дьявола</h2>
-          <p class="foto__author">Автор фото: Антон</p>
-          <div class="foto__like">254</div>
-        </div>
-        <div class="video">
-          <h2 class="video__slogan">все еще сомневаетесь?</h2>
-          <p class="video__text">
-            Смотрите видеопрезентацию и скорее за билетами, пока они не
-            подорожали в очередной раз!
-          </p>
-          <video
-            class="video__film"
-            width="321px"
-            height="201px"
-            src=""
-            controls="controls"
-            poster=""
-          >
-            <button class="video__film-replay">
-              <svg></svg>
-            </button>
-            <button class="video__film-comment">
-              <svg></svg>
-            </button>
-            <button class="video__film-enlarge">
-              <svg></svg>
-            </button>
-          </video>
-        </div>
-      </section>
+      <div class="container">
+        <h1 class="visually-hidden">Седона</h1>
+        <div class="sedona"></div>
+        <section class="foto-video">
+          <div class="foto-video__wrapper foto-video__wrapper--main">
+            <h2 class="foto-video__slogan">фото и видео</h2>
+            <p class="foto-video__text">
+              не можете решиться на путешествие из-за курса? фотографии помогут
+              вам забыть о политике и экономике.
+            </p>
+          </div>
+          <div class="foto-video__wrapper foto-video__wrapper--foto">
+            <div class="foto">
+              <div class="foto__image foto__image--sunset"></div>
+              <div class="foto__wrapper-data">
+                <h2 class="foto__text">неродные просторы</h2>
+                <p class="foto__author">Автор фото: Борис</p>
+                <div class="foto__like">1350</div>
+              </div>
+            </div>
+            <div class="foto">
+              <div class="foto__image foto__image--cactus"></div>
+              <div class="foto__wrapper-data">
+                <h2 class="foto__text">местная растительность</h2>
+                <p class="foto__author">Автор фото: Сергей</p>
+                <div class="foto__like">143</div>
+              </div>
+            </div>
+            <div class="foto">
+              <div class="foto__image foto__image--roads"></div>
+              <div class="foto__wrapper-data">
+                <h2 class="foto__text">дорога на север</h2>
+                <p class="foto__author">Автор фото: Петр</p>
+                <div class="foto__like">96</div>
+              </div>
+            </div>
+            <div class="foto">
+              <div class="foto__image foto__image--bridge"></div>
+              <div class="foto__wrapper-data">
+                <h2 class="foto__text">мост дьявола</h2>
+                <p class="foto__author">Автор фото: Антон</p>
+                <div class="foto__like">254</div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <h2 class="video__slogan">все еще сомневаетесь?</h2>
+            <p class="video__text">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не
+              подорожали в очередной раз!
+            </p>
+            <video
+              class="video__film"
+              width="321px"
+              height="201px"
+              src=""
+              controls="controls"
+              poster=""
+            >
+              <button class="video__film-replay">
+                <svg></svg>
+              </button>
+              <button class="video__film-comment">
+                <svg></svg>
+              </button>
+              <button class="video__film-enlarge">
+                <svg></svg>
+              </button>
+            </video>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <h2 class="hashtag">#visitsedona</h2>
-      <ul class="social">
-        <li class="social__item">
-          <a
-            class="social__link social__link--twitter"
-            href=""
-            target="_blank"
-          ></a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--facebook"
-            href=""
-            target="_blank"
-          ></a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--youtube"
-            href=""
-            target="_blank"
-          ></a>
-        </li>
-      </ul>
-      <div class="developed">
-        <h2 class="developed__text">Разработано</h2>
-        <a class="developed__logo">
-          <img src="../source/img/logo-htmlacademy.svg" alt="HTML Academy" />
-        </a>
+      <div class="container">
+        <h2 class="hashtag">#visitsedona</h2>
+        <ul class="social">
+          <li class="social__item">
+            <a
+              class="social__link social__link--twitter"
+              href=""
+              target="_blank"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--facebook"
+              href=""
+              target="_blank"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              class="social__link social__link--youtube"
+              href=""
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+        <div class="developed">
+          <h2 class="developed__text">Разработано</h2>
+          <a class="developed__logo">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -33,3 +33,28 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__item {
+    background-color: #ffffff;
+
+    &:hover,
+    &:active {
+      background-color: #ffffff;
+    }
+  }
+
+  .nav__link {
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+  }
+}
