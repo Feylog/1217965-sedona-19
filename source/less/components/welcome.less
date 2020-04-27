@@ -6,8 +6,9 @@
     content: "";
     background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
     height: 57px;
-    width: 1201px;
+    width: 320px;
     position: absolute;
+    top: 671px;
   }
 
   &::before {
@@ -27,7 +28,7 @@
       content: "";
       background: url("../img/bg-intro-triangle-tablet.svg") center no-repeat;
       height: 57px;
-      width: 1201px;
+      width: 768px;
       position: absolute;
       top: 420px;
       left: -41px;
@@ -46,14 +47,17 @@
 @media (min-width: @desktop-width) {
   .welcome {
     background: url("../img/bg-back-desktop@1x.jpg") center no-repeat;
+    width: 1200px;
+    height: 518px;
 
     &::after {
       content: "";
       background: url("../img/bg-intro-triangle-desktop.svg") center no-repeat;
       height: 57px;
-      width: 1201px;
+      width: 1200px;
       position: absolute;
-      left: 71px;
+      left: 38px;
+      top: 612px;
     }
 
     &::before {
@@ -62,6 +66,8 @@
       width: 460px;
       height: 350px;
       position: absolute;
+      top: 215px;
+      left: 418px;
     }
   }
 }

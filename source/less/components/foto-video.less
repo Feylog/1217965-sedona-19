@@ -1,6 +1,14 @@
 .foto-video {
   text-transform: uppercase;
-  padding-top: 44px;
+}
+
+.foto-video__wrapper {
+  padding-top: 45px;
+}
+
+.foto-video__wrapper--foto {
+  display: flex;
+  flex-direction: column;
 }
 
 .foto-video h2 {
@@ -20,4 +28,27 @@
   line-height: 24px;
   width: 270px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .foto-video__wrapper--main {
+    padding: 75px 170px;
+  }
+
+  .foto-video__wrapper--foto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 75px 60px 68px;
+  }
+
+  .foto-video__slogan {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto-video__wrapper--foto {
+    padding: 0;
+  }
 }
