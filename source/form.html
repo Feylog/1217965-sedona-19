@@ -38,11 +38,13 @@
         <h1 class="visually-hidden">Седона</h1>
         <div class="sedona"></div>
         <section class="feedback">
-          <h2 class="feedback__slogan">оставьте свой отзыв</h2>
-          <p class="feedback__text">
-            помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях
-          </p>
+          <div class="feedback__wrapper">
+            <h2 class="feedback__slogan">оставьте свой отзыв</h2>
+            <p class="feedback__text">
+              помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+              посещенных вами достопримечательностях
+            </p>
+          </div>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset form__fieldset--name">
               <legend>представьтесь:</legend>
@@ -78,7 +80,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend>контактная информация:</legend>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--contacts">
                 <label for="phone">контактный телефон*:</label>
                 <input
                   type="tel"
@@ -88,7 +90,7 @@
                   required
                 />
               </p>
-              <p class="form__input-wrapper">
+              <p class="form__input-wrapper form__input-wrapper--contacts">
                 <label for="email">электронная почта*:</label>
                 <input
                   type="email"
@@ -186,46 +188,49 @@
                 name="message"
                 id="text"
                 placeholder="Опишите подробно все свои восторги"
-                cols="30"
-                rows="10"
               ></textarea>
+              <button class="form__button" type="submit">
+                отправить отзыв
+              </button>
+              <p class="form__musthave">* — обязательные поля</p>
             </fieldset>
-            <button class="form__button" type="submit">отправить отзыв</button>
           </form>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <div class="container">
-        <h2 class="hashtag">#visitsedona</h2>
-        <ul class="social">
-          <li class="social__item">
-            <a
-              class="social__link social__link--twitter"
-              href=""
-              target="_blank"
-            ></a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href=""
-              target="_blank"
-            ></a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--youtube"
-              href=""
-              target="_blank"
-            ></a>
-          </li>
-        </ul>
-        <div class="developed">
-          <h2 class="developed__text">Разработано</h2>
-          <a class="developed__logo">
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" />
-          </a>
+        <div class="footer">
+          <h2 class="hashtag">#visitsedona</h2>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                class="social__link social__link--twitter"
+                href=""
+                target="_blank"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href=""
+                target="_blank"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href=""
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
+          <div class="developed">
+            <h2 class="developed__text">Разработано</h2>
+            <a class="developed__logo">
+              <img src="img/logo-htmlacademy.svg" alt="HTML Academy" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
