@@ -1,6 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fieldset {
   border: none;
-  padding: 0;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .form__fieldset legend {
@@ -21,13 +27,16 @@
 }
 
 .form__input-wrapper {
-  padding: 20px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form__input-wrapper input {
   background-color: #f2f2f2;
   border: none;
-  padding: 22px 0 20px 22px;
+  padding: 22px 0 20px 21px;
 
   &::placeholder {
     font-family: "PTSans", "Arial", sans-serif;
@@ -36,6 +45,19 @@
     line-height: 26px;
     color: #000000;
   }
+}
+
+.form__input-wrapper--contacts {
+  flex-direction: column;
+  align-items: inherit;
+}
+
+.form__input-wrapper--contacts input {
+  margin-top: 14px;
+}
+
+.form__input-wrapper--contacts label {
+  margin-left: 20px;
 }
 
 .form__radio-list,
@@ -48,12 +70,16 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: none;
+  font-size: 18px;
 }
 
 .form__textarea {
   background-color: #f2f2f2;
   border: none;
   padding: 22px 0 0 21px;
+  margin: 20px 0 50px;
+  width: 280px;
+  height: 160px;
 
   &::placeholder {
     color: #000000;
@@ -83,5 +109,77 @@
 
   &:active {
     background-color: #5496bd;
+  }
+}
+
+.form__musthave {
+  display: none;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form > .form__fieldset:nth-child(1) {
+    order: 2;
+  }
+
+  .form > .form__fieldset:nth-child(2) {
+    order: 3;
+  }
+
+  .form > .form__fieldset:nth-child(3) {
+    order: 1;
+  }
+
+  .form > .form__fieldset:nth-child(4) {
+    order: 4;
+  }
+
+  .form > .form__fieldset:nth-child(5) {
+    order: 5;
+  }
+
+  .form__fieldset {
+    padding: 0 60px;
+  }
+
+  .form__textarea {
+    width: 648px;
+    height: 160px;
+  }
+
+  .form__button {
+    width: 324px;
+  }
+
+  .form__musthave {
+    display: inline-flex;
+    margin-left: 154px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset {
+    padding: 0 120px;
+  }
+
+  .form__textarea {
+    width: 960px;
+    height: 160px;
+  }
+
+  .form__button {
+    width: 480px;
+  }
+
+  .form__musthave {
+    margin-left: 330px;
   }
 }

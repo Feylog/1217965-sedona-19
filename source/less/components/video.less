@@ -1,5 +1,10 @@
 .video {
   border-top: 1px solid #e5e5e5;
+  margin-bottom: 80px;
+}
+
+.video__description {
+  padding: 39px 42px 40px;
 }
 
 .video__slogan {
@@ -7,11 +12,45 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .video__text {
   font-size: 14px;
   color: #333333;
   text-align: center;
-  width: 236px;
+  padding-top: 35px;
+}
+
+.video__film {
+  width: 321px;
+  height: 201px;
+}
+
+@media (min-width: @tablet-width) {
+  .video__description {
+    padding: 0 175px 78px;
+  }
+
+  .video__slogan {
+    font-size: 30px;
+  }
+
+  .video__film {
+    width: 648px;
+    height: 499px;
+    margin: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__description {
+    padding: 72px 392px 76px;
+  }
+
+  .video__film {
+    width: 800px;
+    height: 500px;
+    margin: 0 200px;
+  }
 }

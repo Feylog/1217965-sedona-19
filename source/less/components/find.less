@@ -1,3 +1,7 @@
+.find__description {
+  padding: 33px 20px 40px;
+}
+
 .find__title {
   margin: 0;
   font-family: "PTSans", "Arial", sans-serif;
@@ -5,10 +9,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .find__text {
-  width: 261px;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -16,6 +20,7 @@
   color: #333333;
   text-align: center;
   text-transform: uppercase;
+  margin: 30px 0 40px;
 }
 
 .find__button {
@@ -37,5 +42,33 @@
 
   &:active {
     background-color: #5496bd;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .find__description {
+    padding: 57px 155px;
+  }
+
+  .find__title {
+    font-size: 30px;
+  }
+
+  .find__button {
+    width: 458px;
+  }
+
+  iframe {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .find__description {
+    padding: 57px 371px 66px;
+  }
+
+  iframe {
+    width: 1200px;
   }
 }
