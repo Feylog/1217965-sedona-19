@@ -10,7 +10,7 @@
   <body class="page">
     <header class="page-header">
       <div class="container">
-        <div class="nav">
+        <div class="nav nav--closed nav--nojs">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="">главная</a>
@@ -25,10 +25,13 @@
               <a class="nav__link" href="">html academy</a>
             </li>
           </ul>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
         <div class="page-header__logo">
           <a class="page-header__link">
-            <img class="page-header__image" alt="City of Sedona" />
+            <img class="page-header__image" />
           </a>
         </div>
       </div>
@@ -75,9 +78,15 @@
             </li>
           </ul>
           <div class="reason__info">
-            <div class="reason__info-wrapper reason__info-wrapper--large">
-              <h2 class="reason__info-title">там есть мост дьявола</h2>
-              <p class="reason__info-number">— №2 —</p>
+            <div
+              class="reason__info-wrapper reason__info-wrapper--large reason__info-wrapper--bridge"
+            >
+              <h2 class="reason__info-title reason__info-title--bridge">
+                там есть мост дьявола
+              </h2>
+              <p class="reason__info-number">
+                — №2 —
+              </p>
               <p class="reason__info-text">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
@@ -163,5 +172,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector(".nav");
+      var navToggle = document.querySelector(".nav__toggle");
+
+      navMain.classList.remove("nav--nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("nav--closed")) {
+          navMain.classList.remove("nav--closed");
+          navMain.classList.add("nav--opened");
+        } else {
+          navMain.classList.add("nav--closed");
+          navMain.classList.remove("nav--opened");
+        }
+      });
+    </script>
   </body>
 </html>

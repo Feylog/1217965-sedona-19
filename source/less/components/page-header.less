@@ -5,20 +5,25 @@
 
 .page-header__link {
   width: 102px;
-  height: 83px;
+  height: 58px;
 }
 
 .page-header__image {
   background: url("../img/logo-sedona-mobile.svg") center no-repeat;
   width: 102px;
   height: 83px;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    right: 379px;
+  }
+
   .page-header__image {
     background: url("../img/logo-sedona-tablet.svg") center no-repeat;
-    width: 102px;
-    height: 83px;
   }
 }
 

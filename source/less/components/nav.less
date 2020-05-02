@@ -1,3 +1,7 @@
+.nav {
+  position: relative;
+}
+
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -26,11 +30,88 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 18px 0;
   display: block;
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .nav__toggle {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    cursor: pointer;
+    border: none;
+    top: 18px;
+    right: 21px;
+    padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .nav--closed .nav__toggle::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+    top: 0;
+    left: 0;
+  }
+
+  .nav--opened .nav__toggle {
+    top: 17px;
+    right: 21px;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      cursor: pointer;
+      width: 27px;
+      height: 4px;
+      background-color: #ffffff;
+      top: 9px;
+      left: -1px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .nav--closed .nav__link {
+    display: none;
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
   }
 }
 
