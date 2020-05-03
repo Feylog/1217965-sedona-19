@@ -34,6 +34,7 @@
 .reason__info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .reason__info-wrapper--large {
@@ -46,24 +47,28 @@
 .reason__info-wrapper--bridge {
   padding: 0 20px 25px;
   margin: 0;
+
+  .reason__info-title {
+    margin: 39px 0 0;
+  }
 }
 
 .reason__info-wrapper--short {
   background-color: #eeeeee;
-  padding: 0 20px 15px;
+  padding: 0 20px 14px;
   display: flex;
   flex-direction: column;
 
   .reason__info-title {
-    margin: 28px 0 0;
+    margin: 25px 0 0;
   }
 
   .reason__info-number {
-    margin: 9px 0 0;
+    margin: 11px 0 0;
   }
 
   .reason__info-text {
-    margin: 15px 12px;
+    margin: 14px 12px 15px;
   }
 }
 
@@ -72,11 +77,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin: 58px 0 0;
-}
-
-.reason__info-title--bridge {
-  margin: 44px 0 0;
+  margin: 54px 0 0;
 }
 
 .reason__info-number {
@@ -102,14 +103,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .reason__slogan,
-  .reason__text {
-    width: 490px;
-    margin: 0;
+  .reason__slogan {
+    font-size: 21px;
+    width: 472px;
+    margin: 49px 147px 0;
   }
 
   .reason__text {
-    padding: 35px 0 10px;
+    padding: 29px 0 49px;
 
     &::after {
       content: none;
@@ -140,11 +141,58 @@
   }
 
   .reason__info-wrapper--short {
-    padding: 45px 49px;
+    padding: 18px 49px 21px;
+  }
+
+  .reason__info-wrapper--square {
+    .reason__info-text {
+      margin: 23px 0;
+    }
+  }
+
+  .reason__info-wrapper--road {
+    .reason__info-text {
+      margin: 21px 14px 0;
+    }
+  }
+
+  .reason__info-wrapper--tourist {
+    .reason__info-text {
+      margin: 22px 0 0;
+    }
+  }
+
+  .reason__info-title {
+    font-size: 21px;
+    margin: 0;
+  }
+
+  .reason__info-wrapper--city {
+    .reason__info-title {
+      margin: 27px 0 0;
+    }
+
+    .reason__info-text {
+      margin: 24px 25px 0;
+    }
+  }
+
+  .reason__info-wrapper--bridge {
+    .reason__info-title {
+      margin: 48px 33px 0;
+    }
+
+    .reason__info-text {
+      margin: 24px 25px 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .reason__slogan {
+    margin: 47px 363px 0;
+  }
+
   .reason__info-image--city {
     background: url("../img/main-city-desktop@1x.jpg") center no-repeat;
     width: 800px;
@@ -161,10 +209,64 @@
 
   .reason__info-wrapper--short {
     width: 400px;
-    padding: 50px 0 70px;
+    padding: 45px 0 62px;
   }
 
-  .reason__info-text {
-    width: 285px;
+  .reason__info-wrapper--city {
+    .reason__info-title {
+      margin: 31px 72px 0;
+    }
+
+    .reason__info-number {
+      margin: 11px 0;
+    }
+
+    .reason__info-text {
+      margin: 23px 36px;
+    }
+  }
+
+  .reason__info-wrapper--bridge {
+    .reason__info-title {
+      margin: 57px 105px 0;
+    }
+
+    .reason__info-number {
+      margin: 11px 0;
+    }
+
+    .reason__info-text {
+      margin: 23px 63px 0;
+    }
+  }
+
+  .reason__info-wrapper--square {
+    .reason__info-title {
+      margin: 0 119px 0 115px;
+    }
+
+    .reason__info-text {
+      margin: 23px 56px 0;
+    }
+  }
+
+  .reason__info-wrapper--road {
+    .reason__info-title {
+      margin: 0 111px;
+    }
+
+    .reason__info-text {
+      margin: 23px 62px 0;
+    }
+  }
+
+  .reason__info-wrapper--tourist {
+    .reason__info-title {
+      margin: 0 121px;
+    }
+
+    .reason__info-text {
+      margin: 23px 45px 0;
+    }
   }
 }

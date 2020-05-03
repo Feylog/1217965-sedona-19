@@ -1,36 +1,30 @@
-.page-header__logo {
+.page-header__link {
+  height: 58px;
   display: flex;
   justify-content: center;
 }
 
-.page-header__link {
-  width: 102px;
-  height: 58px;
-}
-
 .page-header__image {
-  background: url("../img/logo-sedona-mobile.svg") center no-repeat;
   width: 102px;
   height: 83px;
   z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo {
+  .page-header__link {
     position: absolute;
     top: 0;
-    right: 379px;
-  }
-
-  .page-header__image {
-    background: url("../img/logo-sedona-tablet.svg") center no-repeat;
+    right: 333px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__image {
-    background: url("../img/logo-sedona-desktop.svg") center no-repeat;
     width: 188px;
     height: 96px;
+  }
+
+  .page-header__link {
+    right: 526px;
   }
 }
