@@ -1,16 +1,20 @@
-.page-header__link {
-  height: 58px;
-  display: flex;
-  justify-content: center;
+.page-header {
+  margin-bottom: 56px;
 }
 
-.page-header__image {
+.page-header__link {
   width: 102px;
   height: 83px;
+  display: block;
   z-index: 1;
+  position: absolute;
 }
 
 @media (min-width: @tablet-width) {
+  .page-header {
+    margin: 0;
+  }
+
   .page-header__link {
     position: absolute;
     top: 0;
@@ -19,12 +23,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__image {
+  .page-header__link {
     width: 188px;
     height: 96px;
-  }
-
-  .page-header__link {
-    right: 526px;
+    right: 611px;
   }
 }
