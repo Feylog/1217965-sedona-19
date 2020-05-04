@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body class="page">
     <header class="page-header">
       <div class="container">
-        <div class="nav">
+        <div class="nav nav--opened nav--nojs">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="">главная</a>
@@ -25,12 +24,17 @@
               <a class="nav__link" href="">html academy</a>
             </li>
           </ul>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-        <div class="page-header__logo">
-          <a class="page-header__link">
-            <img class="page-header__image" alt="City of Sedona" />
-          </a>
-        </div>
+        <a class="page-header__link">
+          <img
+            class="page-header__image"
+            src="img/logo-sedona-mobile.svg"
+            alt="City of Sedona"
+          />
+        </a>
       </div>
     </header>
     <main class="page-content">
@@ -45,7 +49,9 @@
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
           <div class="reason__info">
-            <div class="reason__info-wrapper reason__info-wrapper--large">
+            <div
+              class="reason__info-wrapper reason__info-wrapper--large reason__info-wrapper--city"
+            >
               <h2 class="reason__info-title">настоящий городок</h2>
               <p class="reason__info-number">— №1 —</p>
               <p class="reason__info-text">
@@ -75,9 +81,15 @@
             </li>
           </ul>
           <div class="reason__info">
-            <div class="reason__info-wrapper reason__info-wrapper--large">
-              <h2 class="reason__info-title">там есть мост дьявола</h2>
-              <p class="reason__info-number">— №2 —</p>
+            <div
+              class="reason__info-wrapper reason__info-wrapper--large reason__info-wrapper--bridge"
+            >
+              <h2 class="reason__info-title">
+                там есть мост дьявола
+              </h2>
+              <p class="reason__info-number">
+                — №2 —
+              </p>
               <p class="reason__info-text">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
@@ -85,21 +97,27 @@
             <div class="reason__info-image reason__info-image--bridge"></div>
           </div>
           <div class="reason__info">
-            <div class="reason__info-wrapper reason__info-wrapper--short">
+            <div
+              class="reason__info-wrapper reason__info-wrapper--short reason__info-wrapper--square"
+            >
               <h2 class="reason__info-title">не большая площадь</h2>
               <p class="reason__info-number">— №3 —</p>
               <p class="reason__info-text">
                 все интересные места находятся очень близко
               </p>
             </div>
-            <div class="reason__info-wrapper reason__info-wrapper--short">
+            <div
+              class="reason__info-wrapper reason__info-wrapper--short reason__info-wrapper--road"
+            >
               <h2 class="reason__info-title">красивая дорога</h2>
               <p class="reason__info-number">— №4 —</p>
               <p class="reason__info-text">
                 ехать в седону из лас-вегаса совсем не скучно!
               </p>
             </div>
-            <div class="reason__info-wrapper reason__info-wrapper--short">
+            <div
+              class="reason__info-wrapper reason__info-wrapper--short reason__info-wrapper--tourist"
+            >
               <h2 class="reason__info-title">мало туристов</h2>
               <p class="reason__info-number">— №5 —</p>
               <p class="reason__info-text">

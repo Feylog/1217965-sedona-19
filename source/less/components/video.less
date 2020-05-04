@@ -1,10 +1,10 @@
 .video {
   border-top: 1px solid #e5e5e5;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .video__description {
-  padding: 39px 42px 40px;
+  padding: 18px 42px 35px;
 }
 
 .video__slogan {
@@ -13,13 +13,15 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  margin: 15px 0 0;
 }
 
 .video__text {
   font-size: 14px;
+  line-height: 24px;
   color: #333333;
   text-align: center;
-  padding-top: 35px;
+  margin: 27px 0 0;
 }
 
 .video__film {
@@ -28,12 +30,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .video {
+    border: none;
+    margin-bottom: 44px;
+  }
+
   .video__description {
-    padding: 0 175px 78px;
+    padding: 0 175px 73px;
   }
 
   .video__slogan {
     font-size: 30px;
+  }
+
+  .video__text {
+    margin: 31px 0 0;
   }
 
   .video__film {
@@ -44,8 +55,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .video {
+    margin-bottom: 89px;
+  }
+
   .video__description {
-    padding: 72px 392px 76px;
+    padding: 57px 392px 68px;
   }
 
   .video__film {

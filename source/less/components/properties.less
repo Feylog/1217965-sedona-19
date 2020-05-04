@@ -5,7 +5,8 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 26px 0 42px;
+  padding: 0 0 24px;
+  margin: 17px 0 0;
 }
 
 .properties__item {
@@ -17,31 +18,122 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin: 17px 0;
 }
 
 .properties__text {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  width: 210px;
+  margin: 9px 0;
 }
 
 @media (min-width: @tablet-width) {
   .properties {
     flex-direction: row;
-    padding: 55px 45px 65px 50px;
+    padding: 123px 45px 57px 50px;
+    justify-content: space-between;
+  }
+
+  .properties__title {
+    font-size: 21px;
+  }
+
+  .properties__text {
+    text-align: center;
   }
 
   .properties__item {
     width: 155px;
+    padding: 0;
+  }
+
+  .properties__item:nth-child(1) {
+    order: 1;
+  }
+
+  .properties__item:nth-child(2) {
+    order: 3;
+  }
+
+  .properties__item:nth-child(3) {
+    order: 2;
+  }
+
+  .properties__item--house {
+    .properties__title {
+      margin: 17px 44px;
+    }
+
+    .properties__text {
+      width: 160px;
+      margin: 22px 0 0;
+    }
+  }
+
+  .properties__item--gift {
+    .properties__title {
+      margin: 17px 21px 0;
+    }
+
+    .properties__text {
+      width: 163px;
+      margin: 23px -10px 0;
+    }
+  }
+
+  .properties__item--burger {
+    .properties__title {
+      margin: 17px 56px 0;
+    }
+
+    .properties__text {
+      width: 155px;
+      margin: 22px -2px 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .properties {
-    padding: 55px 90px 85px 70px;
+    padding: 122px 90px 78px 70px;
   }
 
   .properties__item {
-    width: 252px;
+    width: 283px;
+  }
+
+  .properties__item--house {
+    .properties__title {
+      margin: 17px 0 0 95px;
+    }
+
+    .properties__text {
+      width: 252px;
+      margin: 22px 12px 0;
+    }
+  }
+
+  .properties__item--gift {
+    .properties__title {
+      margin: 17px 0 0 122px;
+    }
+
+    .properties__text {
+      width: 214px;
+      margin: 23px 82px 0;
+    }
+  }
+
+  .properties__item--burger {
+    .properties__title {
+      margin: 17px 0 0 132px;
+    }
+
+    .properties__text {
+      width: 283px;
+      margin: 22px 0 0 9px;
+    }
   }
 }
