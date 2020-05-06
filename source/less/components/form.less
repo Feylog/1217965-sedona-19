@@ -23,6 +23,12 @@
   legend {
     padding-right: 20px;
   }
+
+  .form__input-wrapper {
+    input {
+      width: 192px;
+    }
+  }
 }
 
 .form__fieldset--checkbox legend {
@@ -43,7 +49,7 @@
 
 .form__fieldset--radio {
   legend {
-    padding: 25px 0 0;
+    padding: 23px 0 0;
   }
 }
 
@@ -68,7 +74,7 @@
 .form__input-wrapper input {
   background-color: #f2f2f2;
   border: none;
-  padding: 22px 0 18px 22px;
+  padding: 22px 22px 18px;
   flex-grow: 1;
 
   &::placeholder {
@@ -109,10 +115,72 @@
 
 .form__radio-item {
   padding-bottom: 44px;
+
+  label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.form__radio-input + label::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: url("") no-repeat;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+  border-radius: 50%;
+}
+
+.form__radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: url("") no-repeat;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+  border-radius: 50%;
 }
 
 .form__checkbox-item {
   padding-bottom: 55px;
+
+  label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.form__checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: url("") no-repeat;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+}
+
+.form__checkbox-input:checked + label::before {
+  display: none;
+}
+
+.form__checkbox-input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: url("") no-repeat;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
 }
 
 .form__radio-item label,
@@ -207,14 +275,18 @@
   }
 
   .form__fieldset--name {
-    padding-left: 25px;
+    padding-left: 58px;
 
     legend {
-      padding-right: 45px;
+      padding-right: 22px 45px 2px 0;
     }
 
     .form__input-wrapper {
       padding: 0;
+
+      input {
+        width: 177px;
+      }
     }
 
     .form__input-wrapper:nth-of-type(1) {
@@ -231,13 +303,13 @@
   }
 
   .form__fieldset--contacts legend {
-    padding: 34px 0 0;
+    padding: 39px 0 0;
     margin-left: 370px;
   }
 
   .form__fieldset--checkbox legend {
     width: 278px;
-    padding: 32px 0 0;
+    padding: 34px 0 0;
   }
 
   .form__checkbox-list {
@@ -314,6 +386,12 @@
     legend {
       text-align: left;
     }
+
+    .form__input-wrapper {
+      input {
+        width: 314px;
+      }
+    }
   }
 
   .form__fieldset--contacts {
@@ -328,6 +406,10 @@
     .form__input-wrapper--contacts {
       padding: 0;
     }
+
+    .form__input-wrapper--contacts:nth-last-of-type(2) {
+      padding: 0 78px 0 0;
+    }
   }
 
   .form__fieldset--checkbox {
@@ -336,7 +418,7 @@
     }
   }
 
-  .form__fieldset--wrapper {
+  .form__fieldset-inner {
     display: flex;
     padding: 72px 0 0;
   }
@@ -350,8 +432,17 @@
     align-items: center;
     padding: 0;
 
+    .form__input-word {
+      display: none;
+    }
+
     input {
       margin: 0;
+      width: 315px;
+    }
+
+    label {
+      margin: 0 15px 0 0;
     }
   }
 

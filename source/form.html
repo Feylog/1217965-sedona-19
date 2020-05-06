@@ -84,9 +84,12 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend>контактная информация:</legend>
-              <div class="form__fieldset--wrapper">
+              <div class="form__fieldset-inner">
                 <p class="form__input-wrapper form__input-wrapper--contacts">
-                  <label for="phone">контактный телефон*:</label>
+                  <label for="phone"
+                    ><span class="form__input-word">контактный</span>
+                    телефон*:</label
+                  >
                   <input
                     type="tel"
                     name="phone"
@@ -112,7 +115,7 @@
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="positive"
@@ -123,7 +126,7 @@
                 </li>
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="negative"
@@ -133,7 +136,7 @@
                 </li>
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="neutral"
@@ -148,7 +151,7 @@
               <ul class="form__checkbox-list">
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="bridge"
@@ -158,7 +161,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="mountain"
@@ -168,7 +171,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="park"
@@ -178,7 +181,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="rocks"
