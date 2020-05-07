@@ -9,7 +9,7 @@
   <body class="page">
     <header class="page-header">
       <div class="container">
-        <div class="nav nav--closed nav--nojs">
+        <div class="nav nav--opened nav--nojs">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">главная</a>
@@ -27,10 +27,12 @@
           <button class="nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-        </div>
-        <div class="page-header__logo">
           <a class="page-header__link">
-            <img class="page-header__image" alt="City of Sedona" />
+            <img
+              class="page-header__image"
+              src="img/logo-sedona-mobile.svg"
+              alt="City of Sedona"
+            />
           </a>
         </div>
       </div>
@@ -82,33 +84,38 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend>контактная информация:</legend>
-              <p class="form__input-wrapper form__input-wrapper--contacts">
-                <label for="phone">контактный телефон*:</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Введите телефон"
-                  required
-                />
-              </p>
-              <p class="form__input-wrapper form__input-wrapper--contacts">
-                <label for="email">электронная почта*:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Введите e-mail"
-                  required
-                />
-              </p>
+              <div class="form__fieldset-inner">
+                <p class="form__input-wrapper form__input-wrapper--contacts">
+                  <label for="phone"
+                    ><span class="form__input-word">контактный</span>
+                    телефон*:</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Введите телефон"
+                    required
+                  />
+                </p>
+                <p class="form__input-wrapper form__input-wrapper--contacts">
+                  <label for="email">электронная почта*:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                </p>
+              </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--radio">
               <legend>ваше общее впечатление:</legend>
               <ul class="form__radio-list">
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="positive"
@@ -119,7 +126,7 @@
                 </li>
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="negative"
@@ -129,7 +136,7 @@
                 </li>
                 <li class="form__radio-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__radio-input"
                     type="radio"
                     name="impression"
                     value="neutral"
@@ -144,7 +151,7 @@
               <ul class="form__checkbox-list">
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="bridge"
@@ -154,7 +161,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="mountain"
@@ -164,7 +171,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="park"
@@ -174,7 +181,7 @@
                 </li>
                 <li class="form__checkbox-item">
                   <input
-                    class="visually-hidden"
+                    class="visually-hidden form__checkbox-input"
                     type="checkbox"
                     name="attractions"
                     id="rocks"

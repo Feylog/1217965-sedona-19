@@ -1,5 +1,5 @@
 .feedback__wrapper {
-  padding: 40px 22px 22px;
+  padding: 37px 22px 0;
 }
 
 .feedback__slogan {
@@ -7,7 +7,7 @@
   line-height: 26px;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
-  margin: 0;
+  margin: 0 0 0 2px;
   font-weight: 700;
   text-align: center;
 }
@@ -18,21 +18,30 @@
   color: #333333;
   text-align: center;
   font-size: 14px;
-  padding-top: 40px;
+  padding-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .feedback__wrapper {
-    padding: 70px 165px 85px;
+    padding: 72px 162px 53px;
   }
 
   .feedback__slogan {
     font-size: 30px;
+    margin: 0 0 0 -1px;
+  }
+
+  .feedback__text {
+    margin: 17px 0 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feedback__wrapper {
-    padding: 108px 380px 70px;
+    padding: 104px 380px 37px;
+  }
+
+  .feedback__text {
+    margin: 19px 0 0;
   }
 }
