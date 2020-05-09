@@ -2,6 +2,10 @@
   background: url("../img/bg-back-mobile@1x.jpg") center no-repeat;
   height: 158px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   &::after {
     content: "";
     background: url("../img/bg-intro-triangle-mobile.svg") center no-repeat;
@@ -26,6 +30,10 @@
   .sedona {
     background: url("../img/bg-back-tablet@1x.jpg") center no-repeat;
     height: 292px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg");
+    }
 
     &::after {
       content: "";
@@ -54,6 +62,10 @@
     background: url("../img/bg-back-desktop@1x.jpg") center no-repeat;
     width: 1200px;
     height: 305px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg");
+    }
 
     &::after {
       content: "";
