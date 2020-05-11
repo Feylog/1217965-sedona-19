@@ -17,7 +17,7 @@
 .reason__text {
   font-size: 14px;
   line-height: 26px;
-  padding: 28px 32px 6px;
+  padding: 28px 32px 11px;
   margin: 0;
 
   &::after {
@@ -40,7 +40,7 @@
 .reason__info-wrapper--large {
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 21px 20px 26px;
+  padding: 20px 20px 27px;
   width: 320px;
 }
 
@@ -95,11 +95,19 @@
 .reason__info-image--city {
   background: url("../img/main-city-mobile@1x.jpg") center no-repeat;
   height: 260px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main-city-mobile@2x.jpg");
+  }
 }
 
 .reason__info-image--bridge {
   background: url("../img/main-bridge-mobile@1x.jpg") center no-repeat;
   height: 260px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -128,11 +136,19 @@
   .reason__info-image--city {
     background: url("../img/main-city-tablet@1x.jpg") center no-repeat;
     width: 512px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-tablet@2x.jpg");
+    }
   }
 
   .reason__info-image--bridge {
     background: url("../img/main-bridge-tablet@1x.jpg") center no-repeat;
     width: 512px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+    }
   }
 
   .reason__info-wrapper--large,
@@ -196,11 +212,19 @@
   .reason__info-image--city {
     background: url("../img/main-city-desktop@1x.jpg") center no-repeat;
     width: 800px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
   }
 
   .reason__info-image--bridge {
     background: url("../img/main-bridge-desktop@1x.jpg") center no-repeat;
     width: 800px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
   }
 
   .reason__info-wrapper--large {

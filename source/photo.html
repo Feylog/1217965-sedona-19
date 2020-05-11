@@ -28,11 +28,17 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <a class="page-header__link">
-            <img
-              class="page-header__image"
-              src="img/logo-sedona-mobile.svg"
-              alt="City of Sedona"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-sedona-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo-sedona-tablet.svg"
+              />
+              <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" />
+            </picture>
           </a>
       </div>
     </header>
@@ -50,7 +56,14 @@
           </div>
           <div class="foto-video__wrapper foto-video__wrapper--foto">
             <div class="foto">
-              <div class="foto__image foto__image--sunset"></div>
+              <div class="foto__image foto__image--sunset">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
+                  alt="Sunset">
+                </picture>
+              </div>
               <div class="foto__wrapper-data">
                 <h2 class="foto__text">неродные просторы</h2>
                 <p class="foto__author">Автор фото: Борис</p>
@@ -58,7 +71,14 @@
               </div>
             </div>
             <div class="foto">
-              <div class="foto__image foto__image--cactus"></div>
+              <div class="foto__image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+                  alt="Cactus">
+                </picture>
+              </div>
               <div class="foto__wrapper-data">
                 <h2 class="foto__text">местная растительность</h2>
                 <p class="foto__author">Автор фото: Сергей</p>
@@ -66,7 +86,14 @@
               </div>
             </div>
             <div class="foto">
-              <div class="foto__image foto__image--roads"></div>
+              <div class="foto__image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
+                  alt="Roads">
+                </picture>
+              </div>
               <div class="foto__wrapper-data">
                 <h2 class="foto__text">дорога на север</h2>
                 <p class="foto__author">Автор фото: Петр</p>
@@ -74,7 +101,14 @@
               </div>
             </div>
             <div class="foto">
-              <div class="foto__image foto__image--bridge"></div>
+              <div class="foto__image">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+                  alt="Bridge">
+                </picture>
+              </div>
               <div class="foto__wrapper-data">
                 <h2 class="foto__text">мост дьявола</h2>
                 <p class="foto__author">Автор фото: Антон</p>
