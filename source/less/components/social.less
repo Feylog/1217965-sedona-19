@@ -11,10 +11,62 @@
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    .social__link svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__item:not(:last-child) {
   margin-right: 6px;
+}
+
+.social__link {
+  position: relative;
+}
+
+.social__link svg {
+  fill: #ffffff;
+  position: absolute;
+}
+
+.social__link--twitter {
+  padding: 0 23px 27px;
+}
+
+.social__link--twitter svg {
+  width: 18px;
+  height: 14px;
+  top: 19px;
+  right: 15px;
+}
+
+.social__link--facebook {
+  padding: 0 23px 27px;
+}
+
+.social__link--facebook svg {
+  width: 9px;
+  height: 18px;
+  top: 16px;
+  right: 19px;
+}
+
+.social__link--youtube {
+  padding: 0 23px 28px;
+}
+
+.social__link--youtube svg {
+  width: 20px;
+  height: 14px;
+  top: 19px;
+  right: 13px;
 }
 
 @media (min-width: @tablet-width) {
