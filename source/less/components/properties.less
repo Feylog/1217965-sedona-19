@@ -14,40 +14,13 @@
   padding-left: 69px;
 }
 
-.properties__item--house {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 10px;
-    left: 22px;
-    background: url("../img/icon-house.svg") center no-repeat;
-  }
-}
-
-.properties__item--gift {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 10px;
-    left: 22px;
-    background: url("../img/icon-gift.svg") center no-repeat;
-  }
-}
-
-.properties__item--burger {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 39px;
-    height: 37px;
-    top: 10px;
-    left: 22px;
-    background: url("../img/icon-burger.svg") center no-repeat;
-  }
+.properties__item svg {
+  width: 39px;
+  height: 37px;
+  fill: #81b3d2;
+  position: absolute;
+  top: 11px;
+  left: 20px;
 }
 
 .properties__title {
@@ -84,6 +57,15 @@
   .properties__item {
     width: 155px;
     padding: 0;
+  }
+
+  .properties__item svg {
+    width: 75px;
+    height: 73px;
+    fill: #81b3d2;
+    position: absolute;
+    top: -82px;
+    left: 36px;
   }
 
   .properties__item:nth-child(1) {
@@ -139,6 +121,18 @@
 
   .properties__item {
     width: 283px;
+  }
+
+  .properties__item--house svg {
+    left: 91px;
+  }
+
+  .properties__item--burger svg {
+    left: 114px;
+  }
+
+  .properties__item--gift svg {
+    left: 135px;
   }
 
   .properties__item--house {

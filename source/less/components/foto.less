@@ -1,8 +1,20 @@
 .foto {
-  padding: 22px 20px 17px;
+  padding: 25px 20px 16px;
   font-size: 14px;
   line-height: 24px;
   border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.foto__wrapper-data {
+  svg {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 375px;
+    right: 276px;
+    opacity: 0.3;
+  }
 }
 
 .foto__text {
@@ -22,6 +34,7 @@
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: 700;
   padding: 8px 0 0 36px;
+  position: relative;
 }
 
 .foto__image {
@@ -49,17 +62,60 @@
     margin: 0;
   }
 
+  .foto__wrapper-data {
+    position: relative;
+    padding: 16px 20px;
+
+    svg {
+      top: 29px;
+      right: 62px;
+    }
+  }
+
   .foto__like {
+    position: absolute;
+    top: 30px;
+    right: 21px;
     padding: 0;
+    width: 31px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .foto {
+    height: 267px;
+
+    &:first-child {
+      height: 400px;
+    }
+  }
+
   .foto__image {
     width: 400px;
+    position: relative;
+    z-index: 1;
   }
 
   .foto__image--sunset {
     width: 1200px;
+  }
+
+  .foto__wrapper-data {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    bottom: 80px;
+
+    .foto__author {
+      color: #ffffff;
+    }
+
+    svg {
+      opacity: 1;
+
+      path {
+        fill: #ffffff;
+      }
+    }
   }
 }
