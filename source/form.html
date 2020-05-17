@@ -1,196 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>HTML: Проект Sedona_Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body class="page">
-  <header class="page-header">
-    <div class="container">
-      <div class="nav nav--opened nav--nojs">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="photo.html">фото и видео</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="">форма отзыва</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="">html academy</a>
-          </li>
-        </ul>
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="page-header__wrapper">
-          <a class="page-header__link">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
-              <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" />
-            </picture>
-          </a>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML: Проект Sedona_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="container">
+        <div class="nav nav--opened nav--nojs">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="photo.html">фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="">форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">html academy</a>
+            </li>
+          </ul>
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="page-header__wrapper">
+            <a class="page-header__link">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/logo-sedona-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/logo-sedona-tablet.svg"
+                />
+                <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" />
+              </picture>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main class="page-content">
-    <div class="container">
-      <h1 class="visually-hidden">Седона</h1>
-      <div class="sedona">
-        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
-          <use xlink:href="img/sprite.svg#sedona"></use>
-        </svg>
-      </div>
-      <section class="feedback">
-        <div class="feedback__wrapper">
-          <h2 class="feedback__slogan">оставьте свой отзыв</h2>
-          <p class="feedback__text">
-            помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях
-          </p>
+    </header>
+    <main class="page-content">
+      <div class="container">
+        <h1 class="visually-hidden">Седона</h1>
+        <div class="sedona">
+          <svg
+            version="1.0"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 459.754 79.805"
+            enable-background="new 0 0 459.754 79.805"
+            xml:space="preserve"
+          >
+            <use xlink:href="img/sprite.svg#sedona"></use>
+          </svg>
         </div>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset form__fieldset--name">
-            <legend>представьтесь:</legend>
-            <p class="form__input-wrapper">
-              <label for="name">имя*:</label>
-              <input type="text" name="name" id="name" placeholder="Петр" required />
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <h2 class="feedback__slogan">оставьте свой отзыв</h2>
+            <p class="feedback__text">
+              помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+              посещенных вами достопримечательностях
             </p>
-            <p class="form__input-wrapper">
-              <label for="surname">фамилия*:</label>
-              <input type="text" name="surname" id="surname" placeholder="Иванов" required />
-            </p>
-            <p class="form__input-wrapper">
-              <label for="middle-name">отчество:</label>
-              <input type="text" name="middle-name" id="middle-name" placeholder="Александрович" />
-            </p>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend>контактная информация:</legend>
-            <div class="form__fieldset-inner">
-              <p class="form__input-wrapper form__input-wrapper--contacts form__input-wrapper--phone">
-                <label for="phone"><span class="form__input-word">контактный</span>
-                  телефон*:</label>
-                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required />
+          </div>
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__fieldset form__fieldset--name">
+              <legend>представьтесь:</legend>
+              <p class="form__input-wrapper">
+                <label for="name">имя*:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Петр"
+                  required
+                />
               </p>
-              <p class="form__input-wrapper form__input-wrapper--contacts form__input-wrapper--mail">
-                <label for="email">электронная почта*:</label>
-                <input type="email" name="email" id="email" placeholder="Введите e-mail" required />
+              <p class="form__input-wrapper">
+                <label for="surname">фамилия*:</label>
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Иванов"
+                  required
+                />
               </p>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--radio">
-            <legend>ваше общее впечатление:</legend>
-            <ul class="form__radio-list">
-              <li class="form__radio-item">
-                <input class="visually-hidden form__radio-input" type="radio" name="impression" value="positive"
-                  id="positive" checked />
-                <label for="positive">Скорее положительное</label>
-              </li>
-              <li class="form__radio-item">
-                <input class="visually-hidden form__radio-input" type="radio" name="impression" value="negative"
-                  id="negative" />
-                <label for="negative">Скорее отрицательное</label>
-              </li>
-              <li class="form__radio-item">
-                <input class="visually-hidden form__radio-input" type="radio" name="impression" value="neutral"
-                  id="neutral" />
-                <label for="neutral">Затрудняюсь ответить</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--checkbox">
-            <legend>посещенные достопримечательности:</legend>
-            <ul class="form__checkbox-list">
-              <li class="form__checkbox-item">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="attractions" id="bridge"
-                  checked />
-                <label for="bridge">Мост Дьявола</label>
-              </li>
-              <li class="form__checkbox-item">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="attractions" id="mountain"
-                  checked />
-                <label for="mountain">Гора-Колокол</label>
-              </li>
-              <li class="form__checkbox-item">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="attractions" id="park"
-                  checked />
-                <label for="park">Слайд-парк</label>
-              </li>
-              <li class="form__checkbox-item">
-                <input class="visually-hidden form__checkbox-input" type="checkbox" name="attractions" id="rocks" />
-                <label for="rocks">Красные скалы</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--textarea">
-            <legend>опишите свои эмоции:</legend>
-            <textarea class="form__textarea" name="message" id="text"
-              placeholder="Опишите подробно все свои восторги"></textarea>
-            <button class="form__button" type="submit">
-              отправить отзыв
-            </button>
-            <p class="form__musthave">* — обязательные поля</p>
-          </fieldset>
-        </form>
-      </section>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="footer">
-        <h2 class="hashtag">#visitsedona</h2>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="" target="_blank">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.5 14.663"
-                enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                <use xlink:href="img/sprite.svg#twitter"></use>
+              <p class="form__input-wrapper">
+                <label for="middle-name">отчество:</label>
+                <input
+                  type="text"
+                  name="middle-name"
+                  id="middle-name"
+                  placeholder="Александрович"
+                />
+              </p>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--contacts">
+              <legend>контактная информация:</legend>
+              <div class="form__fieldset-inner">
+                <p
+                  class="form__input-wrapper form__input-wrapper--contacts form__input-wrapper--phone"
+                >
+                  <label for="phone"
+                    ><span class="form__input-word">контактный</span>
+                    телефон*:</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Введите телефон"
+                    required
+                  />
+                </p>
+                <p
+                  class="form__input-wrapper form__input-wrapper--contacts form__input-wrapper--mail"
+                >
+                  <label for="email">электронная почта*:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--radio">
+              <legend>ваше общее впечатление:</legend>
+              <ul class="form__radio-list">
+                <li class="form__radio-item">
+                  <input
+                    class="visually-hidden form__radio-input"
+                    type="radio"
+                    name="impression"
+                    value="positive"
+                    id="positive"
+                    checked
+                  />
+                  <label for="positive">Скорее положительное</label>
+                </li>
+                <li class="form__radio-item">
+                  <input
+                    class="visually-hidden form__radio-input"
+                    type="radio"
+                    name="impression"
+                    value="negative"
+                    id="negative"
+                  />
+                  <label for="negative">Скорее отрицательное</label>
+                </li>
+                <li class="form__radio-item">
+                  <input
+                    class="visually-hidden form__radio-input"
+                    type="radio"
+                    name="impression"
+                    value="neutral"
+                    id="neutral"
+                  />
+                  <label for="neutral">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--checkbox">
+              <legend>посещенные достопримечательности:</legend>
+              <ul class="form__checkbox-list">
+                <li class="form__checkbox-item">
+                  <input
+                    class="visually-hidden form__checkbox-input"
+                    type="checkbox"
+                    name="attractions"
+                    id="bridge"
+                    checked
+                  />
+                  <label for="bridge">Мост Дьявола</label>
+                </li>
+                <li class="form__checkbox-item">
+                  <input
+                    class="visually-hidden form__checkbox-input"
+                    type="checkbox"
+                    name="attractions"
+                    id="mountain"
+                    checked
+                  />
+                  <label for="mountain">Гора-Колокол</label>
+                </li>
+                <li class="form__checkbox-item">
+                  <input
+                    class="visually-hidden form__checkbox-input"
+                    type="checkbox"
+                    name="attractions"
+                    id="park"
+                    checked
+                  />
+                  <label for="park">Слайд-парк</label>
+                </li>
+                <li class="form__checkbox-item">
+                  <input
+                    class="visually-hidden form__checkbox-input"
+                    type="checkbox"
+                    name="attractions"
+                    id="rocks"
+                  />
+                  <label for="rocks">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--textarea">
+              <legend>опишите свои эмоции:</legend>
+              <textarea
+                class="form__textarea"
+                name="message"
+                id="text"
+                placeholder="Опишите подробно все свои восторги"
+              ></textarea>
+              <button class="form__button" type="submit">
+                отправить отзыв
+              </button>
+              <p class="form__musthave">* — обязательные поля</p>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer">
+          <h2 class="hashtag">#visitsedona</h2>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                class="social__link social__link--twitter"
+                href=""
+                target="_blank"
+              >
+                <svg
+                  version="1.0"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 17.5 14.663"
+                  enable-background="new 0 0 17.5 14.663"
+                  xml:space="preserve"
+                >
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href=""
+                target="_blank"
+              >
+                <svg
+                  version="1.0"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 8.672 18.944"
+                  enable-background="new 0 0 8.672 18.944"
+                  xml:space="preserve"
+                >
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href=""
+                target="_blank"
+              >
+                <svg
+                  version="1.0"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 19.979 14.015"
+                  enable-background="new 0 0 19.979 14.015"
+                  xml:space="preserve"
+                >
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="developed">
+            <h2 class="developed__text">Разработано</h2>
+            <a class="developed__logo" href="https://htmlacademy.ru/">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 26.943 34.09"
+                enable-background="new 0 0 26.943 34.09"
+                xml:space="preserve"
+              >
+                <use xlink:href="img/sprite.svg#academy"></use>
               </svg>
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="" target="_blank">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.672 18.944"
-                enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="" target="_blank">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.979 14.015"
-                enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="developed">
-          <h2 class="developed__text">Разработано</h2>
-          <a class="developed__logo" href="https://htmlacademy.ru/">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.943 34.09"
-              enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-              <use xlink:href="img/sprite.svg#academy"></use>
-            </svg>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
