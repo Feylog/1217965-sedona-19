@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <title>HTML: Проект Sedona_Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="page">
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="container">
         <div class="nav nav--closed nav--nojs">
@@ -76,7 +79,7 @@
                     name="name"
                     id="name"
                     placeholder="Петр"
-                    required
+                    required=""
                   />
                 </p>
                 <p class="form__input-wrapper">
@@ -86,7 +89,7 @@
                     name="surname"
                     id="surname"
                     placeholder="Иванов"
-                    required
+                    required=""
                   />
                 </p>
                 <p class="form__input-wrapper">
@@ -116,7 +119,7 @@
                       name="phone"
                       id="phone"
                       placeholder="Введите телефон"
-                      required
+                      required=""
                     />
                   </p>
                   <p
@@ -128,7 +131,7 @@
                       name="email"
                       id="email"
                       placeholder="Введите e-mail"
-                      required
+                      required=""
                     />
                   </p>
                 </div>
@@ -145,7 +148,7 @@
                       name="impression"
                       value="positive"
                       id="positive"
-                      checked
+                      checked=""
                     />
                     <label for="positive">Скорее положительное</label>
                   </li>
@@ -182,7 +185,7 @@
                       type="checkbox"
                       name="attractions"
                       id="bridge"
-                      checked
+                      checked=""
                     />
                     <label for="bridge">Мост Дьявола</label>
                   </li>
@@ -192,7 +195,7 @@
                       type="checkbox"
                       name="attractions"
                       id="mountain"
-                      checked
+                      checked=""
                     />
                     <label for="mountain">Гора-Колокол</label>
                   </li>
@@ -202,7 +205,7 @@
                       type="checkbox"
                       name="attractions"
                       id="park"
-                      checked
+                      checked=""
                     />
                     <label for="park">Слайд-парк</label>
                   </li>
