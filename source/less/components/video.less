@@ -84,6 +84,31 @@
   }
 }
 
+.video__film-range {
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  padding: 21px 23px;
+  background: rgba(0, 0, 0, 0.6);
+
+  .scale {
+    width: 235px;
+    height: 3px;
+    background-color: #ffffff;
+    opacity: 0.2;
+  }
+
+  .toggle {
+    width: 9px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 58px;
+  }
+}
+
 .video__film-comment {
   svg {
     width: 32px;
@@ -162,6 +187,20 @@
     }
   }
 
+  .video__film-range {
+    background: none;
+    bottom: 23px;
+    left: 69px;
+
+    .scale {
+      width: 390px;
+    }
+
+    .toggle {
+      left: 137px;
+    }
+  }
+
   .video__film-replay {
     svg {
       left: 11px;
@@ -218,6 +257,12 @@
   .video__film-enlarge {
     svg {
       left: 677px;
+    }
+  }
+
+  .video__film-range {
+    .scale {
+      width: 540px;
     }
   }
 }
