@@ -158,8 +158,10 @@
 .form__checkbox-list {
   padding: 32px 0 0 79px;
 
-  :nth-of-type(4) {
-    padding-bottom: 39px;
+  .form__checkbox-item {
+    &:nth-of-type(4) {
+      padding-bottom: 39px;
+    }
   }
 }
 
@@ -326,25 +328,25 @@
     border: none;
   }
 
-  .form > .form__wrapper:nth-child(1) {
+  .form__wrapper:nth-child(1) {
     order: 2;
   }
 
-  .form > .form__wrapper:nth-child(2) {
+  .form__wrapper:nth-child(2) {
     order: 3;
     margin-top: 70px;
   }
 
-  .form > .form__wrapper:nth-child(3) {
+  .form__wrapper:nth-child(3) {
     order: 1;
     border-right: 1px solid #e5e5e5;
   }
 
-  .form > .form__wrapper:nth-child(4) {
+  .form__wrapper:nth-child(4) {
     order: 4;
   }
 
-  .form > .form__wrapper:nth-child(5) {
+  .form__wrapper:nth-child(5) {
     order: 5;
   }
 
@@ -456,14 +458,14 @@
 
   .form__radio-list {
     padding: 74px 0 0 75px;
-
-    :nth-of-type(3) {
-      padding-bottom: 21px;
-    }
   }
 
   .form__radio-item {
     padding-bottom: 52px;
+
+    &:nth-of-type(3) {
+      padding-bottom: 21px;
+    }
   }
 
   .form__textarea {
@@ -486,10 +488,10 @@
 @media (min-width: @desktop-width) {
   .form {
     padding: 0 118px;
+  }
 
-    .form__wrapper:nth-child(2) {
-      margin-top: 65px;
-    }
+  .form__wrapper:nth-child(2) {
+    margin-top: 65px;
   }
 
   .form__fieldset--radio {
