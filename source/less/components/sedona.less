@@ -5,6 +5,8 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+    background-position: bottom;
   }
 
   &::after {
@@ -27,11 +29,13 @@
 
 @media (min-width: @tablet-width) {
   .sedona {
-    background: url("../img/bg-back-tablet@1x.jpg") center no-repeat;
+    background: url("../img/bg-back-tablet@1x.jpg") center bottom no-repeat;
     height: 292px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+      background-position: bottom;
     }
 
     &::after {
@@ -55,7 +59,7 @@
 
 @media (min-width: @desktop-width) {
   .sedona {
-    background: url("../img/bg-back-desktop@1x.jpg") center no-repeat;
+    background: url("../img/bg-back-desktop@1x.jpg") center bottom no-repeat;
     width: 1200px;
     height: 305px;
 
