@@ -1,11 +1,24 @@
 .popup {
   width: 320px;
+  display: none;
+  position: fixed;
+  top: 325px;
+  left: 50%;
+  margin-left: -160px;
+
+  &:nth-of-type(2) {
+    top: 370px;
+  }
+}
+
+.popup--active {
+  display: block;
 }
 
 .popup__success,
 .popup__failure {
-  display: none;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
 }
 
 .popup__success-wrapper,
@@ -75,6 +88,7 @@
 @media (min-width: @tablet-width) {
   .popup {
     width: 640px;
+    margin-left: -320px;
   }
 
   .popup__failure {

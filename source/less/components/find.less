@@ -1,5 +1,5 @@
 .find__description {
-  padding: 21px 20px 47px;
+  padding: 24px 20px 61px;
 }
 
 .find__title {
@@ -20,11 +20,14 @@
   color: #333333;
   text-align: center;
   text-transform: uppercase;
-  margin: 20px 0 34px;
+  margin: 20px 0 53px;
+
+  br {
+    display: none;
+  }
 }
 
-.find__button {
-  width: 280px;
+.find__hotels {
   color: #ffffff;
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 21px;
@@ -34,7 +37,8 @@
   background-color: #81b3d2;
   cursor: pointer;
   border: none;
-  padding: 18px 0;
+  padding: 17px 47px;
+  text-decoration: none;
 
   &:hover {
     background-color: #669ec0;
@@ -48,6 +52,7 @@
 .find__map-wrapper {
   width: 320px;
   height: 350px;
+  position: relative;
   background: url("../img/bg-map-mobile@1x.jpg") center no-repeat;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -63,19 +68,23 @@ iframe {
 
 @media (min-width: @tablet-width) {
   .find__description {
-    padding: 55px 155px;
+    padding: 59px 155px 78px;
   }
 
   .find__title {
     font-size: 30px;
   }
 
-  .find__button {
-    width: 458px;
+  .find__text {
+    margin: 32px 0 58px;
+
+    br {
+      display: block;
+    }
   }
 
-  .find__text {
-    margin: 32px 0 41px;
+  .find__hotels {
+    padding: 16px 136px;
   }
 
   .find__map-wrapper {
@@ -90,7 +99,12 @@ iframe {
 
 @media (min-width: @desktop-width) {
   .find__description {
-    padding: 57px 371px 66px;
+    padding: 56px 371px 78px;
+  }
+
+  .find__text {
+    padding: 0;
+    margin: 32px 0 63px;
   }
 
   .find__map-wrapper {
