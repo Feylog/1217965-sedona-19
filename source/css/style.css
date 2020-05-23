@@ -2274,22 +2274,13 @@ iframe {
   }
   .form__fieldset--name {
     width: 400px;
-    padding-left: 76px;
+    padding-left: 75px;
   }
   .form__fieldset--name legend {
     text-align: left;
   }
   .form__fieldset--name .form__input-wrapper input {
     width: 314px;
-  }
-  .form__fieldset--contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .form__fieldset--contacts legend {
     margin: 0;
@@ -2308,6 +2299,10 @@ iframe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 72px 0 0;
   }
   .form__radio-list {
