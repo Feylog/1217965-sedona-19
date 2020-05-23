@@ -347,9 +347,15 @@ html {
   font-size: 18px;
   font-weight: 400;
 }
+@media (min-width: 1200px) {
+  .page {
+    background-color: #f2f2f2;
+  }
+}
 .container {
   width: 320px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .container {
@@ -359,6 +365,8 @@ html {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
 .page-header {
@@ -373,8 +381,6 @@ html {
           justify-content: center;
 }
 .page-header__link {
-  width: 102px;
-  height: 83px;
   z-index: 1;
   position: absolute;
   cursor: pointer;
@@ -389,7 +395,7 @@ html {
   }
 }
 @media (min-width: 1200px) {
-  .page-header__link {
+  .page-header__link img {
     width: 188px;
     height: 96px;
   }
@@ -2030,6 +2036,7 @@ iframe {
   margin: 12px 0 50px;
   width: 280px;
   height: 160px;
+  resize: none;
 }
 .form__textarea::-webkit-input-placeholder {
   color: #000000;
@@ -2146,6 +2153,7 @@ iframe {
     font-size: 21px;
   }
   .form__fieldset--name {
+    width: 266px;
     padding-left: 57px;
   }
   .form__fieldset--name legend {
@@ -2164,6 +2172,7 @@ iframe {
     padding: 16px 0 0;
   }
   .form__fieldset--radio {
+    width: 274px;
     margin-right: 50px;
   }
   .form__fieldset--contacts {
@@ -2257,13 +2266,15 @@ iframe {
     margin-top: 65px;
   }
   .form__fieldset--radio {
-    margin-right: 48px;
+    width: 349px;
+    margin-right: 135px;
   }
   .form__fieldset--radio legend {
-    margin-left: 162px;
+    padding: 0 0 0 77px;
   }
   .form__fieldset--name {
-    padding-left: 77px;
+    width: 400px;
+    padding-left: 76px;
   }
   .form__fieldset--name legend {
     text-align: left;
