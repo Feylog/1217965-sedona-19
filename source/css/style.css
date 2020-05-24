@@ -1813,7 +1813,6 @@ iframe {
 }
 .form__fieldset--checkbox legend {
   padding-top: 14px;
-  margin-left: 17px;
 }
 .form__fieldset--textarea legend {
   padding-top: 19px;
@@ -1925,7 +1924,7 @@ iframe {
   width: 58px;
   height: 58px;
   background: #e6e6e6 url("../img/icon-mail.svg") center no-repeat;
-  top: 151px;
+  top: 153px;
   right: 0;
 }
 .form__input-wrapper--contacts input {
@@ -2159,10 +2158,11 @@ iframe {
   }
   .form__fieldset--name {
     width: 266px;
-    padding-left: 57px;
+    padding-left: 56px;
   }
   .form__fieldset--name legend {
     padding: 0 45px 1px 0;
+    margin: 0;
   }
   .form__fieldset--name .form__input-wrapper {
     width: 266px;
@@ -2172,13 +2172,16 @@ iframe {
     width: 177px;
   }
   .form__fieldset--name .form__input-wrapper:nth-of-type(1) {
-    padding: 57px 0 16px;
+    padding: 56px 0 19px;
   }
   .form__fieldset--name .form__input-wrapper:nth-of-type(3) {
     padding: 16px 0 0;
   }
   .form__fieldset--radio {
     margin-right: 50px;
+  }
+  .form__fieldset--radio legend {
+    margin: 0;
   }
   .form__fieldset--contacts {
     width: 648px;
@@ -2293,9 +2296,11 @@ iframe {
   .form__fieldset--name .form__input-wrapper input {
     width: 314px;
   }
+  .form__fieldset--contacts {
+    width: 964px;
+  }
   .form__fieldset--contacts legend {
     margin: 0 0 0 278px;
-    padding: 0 0 0 12px;
   }
   .form__fieldset--contacts .form__input-wrapper--contacts {
     padding: 0;
@@ -2318,7 +2323,7 @@ iframe {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 72px 0 0;
+    padding: 73px 0 0;
   }
   .form__radio-list {
     padding: 72px 0 0 82px;
@@ -2338,7 +2343,7 @@ iframe {
   }
   .form__input-wrapper--contacts input {
     margin: 0;
-    width: 315px;
+    width: 316px;
   }
   .form__input-wrapper--contacts label {
     margin: 0 19px 0 0;
@@ -2351,7 +2356,7 @@ iframe {
     right: 557px;
   }
   .form__checkbox-list {
-    padding: 6px 0 20px 22px;
+    padding: 6px 0 19px 22px;
     width: 962px;
   }
   .form__checkbox-item {
