@@ -373,12 +373,8 @@ html {
   margin-bottom: 56px;
 }
 .page-header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  left: 50%;
+  margin-left: 109px;
 }
 .page-header__link {
   z-index: 1;
@@ -389,6 +385,9 @@ html {
   .page-header {
     margin: 0;
   }
+  .page-header__wrapper {
+    margin-left: 333px;
+  }
   .page-header__link {
     top: 0;
   }
@@ -397,6 +396,9 @@ html {
   .page-header__link img {
     width: 188px;
     height: 96px;
+  }
+  .page-header__wrapper {
+    margin-left: 506px;
   }
 }
 .nav {
