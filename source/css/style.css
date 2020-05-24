@@ -390,7 +390,6 @@ html {
     margin: 0;
   }
   .page-header__link {
-    position: absolute;
     top: 0;
   }
 }
@@ -2300,7 +2299,7 @@ iframe {
     width: 314px;
   }
   .form__fieldset--contacts {
-    width: 964px;
+    width: 966px;
   }
   .form__fieldset--contacts legend {
     margin: 0 0 0 278px;
