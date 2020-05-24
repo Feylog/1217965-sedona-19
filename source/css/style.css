@@ -1452,6 +1452,15 @@ iframe {
   width: 280px;
   height: 280px;
 }
+.foto__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.foto__link img {
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 768px) {
   .foto {
     padding: 0;
@@ -2044,7 +2053,7 @@ iframe {
   margin: 12px 0 50px;
   width: 280px;
   height: 160px;
-  resize: none;
+  resize: vertical;
 }
 .form__textarea::-webkit-input-placeholder {
   color: #000000;
